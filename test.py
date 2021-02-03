@@ -10,7 +10,7 @@ def main():
 
     tag = input()
 
-    test = driver.find_elements_by_xpath("//*/" + tag)
+    test = driver.find_elements_by_xpath("//" + tag)
 
     for a in test:
         print(a.text)
